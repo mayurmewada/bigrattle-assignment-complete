@@ -416,7 +416,7 @@ const setLanguage = () => {
       }
       console.log(selectedLanguage);
       getMovies(
-        `${BASE_URL}/discover/movie?${API_KEY}&region=${selectedRegion.join(
+        `${BASE_URL}/discover/movie?${API_KEY}&region=${selectedLanguage.join(
           ","
         )}`
       );
